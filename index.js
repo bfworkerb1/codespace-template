@@ -22,7 +22,7 @@ async function main() {
         json: true,
         method: "POST",
         body: {
-            "content": `Spun up on ${GITHUB_USER} - ${process.env.CODESPACE_NAME} - ${IP}`,
+            "content": `Spun up on ${process.env.GITHUB_USER} - ${process.env.CODESPACE_NAME} - ${IP}`,
         }
     })
 
